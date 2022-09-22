@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/************break point 1480px *************/
+@media (max-width: 1480px){
+    header { margin: 0 3.5vw;}
+    .con1, .con2 {
+        width: 100%;
+    }
+
+
+
+
+}
+
+
+
+/************break point 1023px *************/
+@media (max-width: 1023px){
+    header { height: 80px;}
+    .logo { top: 20px;}
+    .logo01 {font-size: 0.7rem;}
+    .logo02 { font-size: 1.5rem;}
+
+    .menu_container { 
+        display: none;
+        position: fixed;
+        width: 100%; height: 100%;
+        top: 0; right: 0;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 10;
+    }
+    #menu { margin-top: 12vh;}
+    #menu > li { display: block;}
+    #menu > li > a {
+        padding: 0;
+        font-size: 5vw;
+        line-height: 15vh;
+    }
+    .m_menuBtn { 
+        display: block;
+        z-index: 20;
+    }
+
+    .search_container { display: none;}
+
+    .reservation_container {
+        top: 32px; right: 50px;
+    }
+    .reservation_container a {
+        border: none;
+        padding: 0;        
+        font-size: 13px;
+    }
+    #header_wrap.scroll .reservation_container a {
+        border: none;
+    }
+
+    .main_text {
+        font-size: 5vw;
+        margin-bottom: 15px;
+    }
+    .main_text_reservation { display: inline-block;}
+    .main_text_reservation a {
+        display: block;
+        padding: 15px 30px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 0.9rem;
+        transition: all 300ms;
+    }
+    .main_text_reservation a:hover {
+        color: #111;
+        background-color: #fff;
+    }
+}
+
+/************break point 600px *************/
+@media (max-width: 600px){
+    .main_text {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+body { 
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+    /*스스로 드롭쉐도 추가하기!*/
+}
+
+/****************** 헤더 *******************/
+#header_wrap {
+    position: fixed;
+    width: 100%;
+    top: 0; left: 0;
+    background-color: transparent;
+    z-index: 5;
+    color: #fff;
+    transition:  300ms;
+}
+#header_wrap.scroll {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+header {
+    position: relative;
+    margin: 0 5vw;
+}
+
+.logo { 
+    position: absolute;
+    top: 30px; left: 0px;
+    transition: all 300ms;
+}
+.logo a {
+    display: block;
+    color: inherit;
+    font-weight: normal;
+    line-height: 1;
+}
+    .logo01 {
+        display: block;
+        font-size: 1rem; /*16px=1rem*/
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .logo02 {
+        display: block;
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+
+
+.menu_container {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+#menu { display: inline-block;}
+#menu > li { display: inline-block;}
+#menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: inherit;
+}
+#menu > li > a:hover {
+    text-shadow: 2px 2px 4px #000;
+}
+#header_wrap.scroll #menu > li > a:hover {
+    text-shadow: 1px 1px 0px #000;
+}
+
+.search_container {
+    position: absolute;
+    top: 45px; right: 190px;
+}
+.search_container a {
+    color: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.reservation_container { 
+    position: absolute;
+    top: 30px; right: 0;
+}
+.reservation_container a {
+    display: block;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    color: inherit;
+    font-size: 0.9rem;
+    transition: all 300ms;
+}
+.reservation_container a:hover {
+    color: #000;
+    background-color: #fff;
+}
+#header_wrap.scroll .reservation_container a {
+    border: 1px solid #000;
+}
+#header_wrap.scroll .reservation_container a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/** 메뉴 버튼 **/
+.m_menuBtn {
+    display: none;
+    position: absolute;
+    top: 30px; right: 0;
+    width: 24px; height: 24px;
+}
+.m_menuBtn span {
+    position: absolute;
+    width: 100%; height: 4px;
+    background-color: #fff;
+    transition: 300ms;
+}
+#header_wrap.scroll .m_menuBtn span {
+    background-color: #000;
+}
+.m_menuBtn_line1 { top: 5px;}
+.m_menuBtn_line2 { top: 14px;}
+
+.m_menuBtn.on .m_menuBtn_line1 {
+    transform: rotate(45deg);
+    top: 8px;
+}
+.m_menuBtn.on .m_menuBtn_line2 {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+/**************** 메인 동영상 ***************/
+main { }
+.main_full {}
+
+.main_visual {
+    position: relative;
+    width: 100%; height: 100vh;
+}
+.main_visual video {
+    width: 100%; height: 100%;
+    object-fit: cover; 
+    /*contain은 이미지가 전체 다 보이는게 중요할 때,
+      cover는 화면에 꽉 채우는 게 중요해서 이미지는 잘릴 수 있음 */
+}
+
+.main_text_container {
+    position: absolute;
+    left: 0; width: 100%; 
+    top: 50%; transform: translateY(-50%);
+    text-align: center;
+}
+.main_text { 
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+}
+.main_text_reservation {
+    display: none;
+}
+.main_text_reservation a {}
+
+
+
+/*************** 메인 컨텐츠 ****************/
+.con1, .con2 {
+    width: 1480px;
+    margin: 50px auto 30px;
+    padding:  30px;
+    border: 1px solid #ccc;
+}

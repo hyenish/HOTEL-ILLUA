@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>동영상배경, 헤더고정</title>
+<link rel="stylesheet" href="css/reset.css">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/rwd.css">
+<script src="https://kit.fontawesome.com/8570aa860b.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script defer src="js/main.js"></script>
+</head>
+<body>
+	<div id="header_wrap">
+		<header>
+			<h1 class="logo">
+				<a href="#">
+					<span class="logo01">HOTEL</span>
+					<span class="logo02">ILLUA</span>
+				</a>
+			</h1>
+			<nav class="menu_container">
+				<ul id="menu">
+					<li><a href="#">ROOMS</a></li>
+					<li><a href="#">OFFERS</a></li>
+					<li><a href="#">DINING & BAR</a></li>
+					<li><a href="#">FACILITIES</a></li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+			</nav>
+			<div class="search_container">
+				<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+			</div>
+			<div class="reservation_container">
+				<a href="#">RESERVATION</a>
+			</div>
+			<a href="#" class="m_menuBtn">
+				<span class="m_menuBtn_line1"></span>
+				<span class="m_menuBtn_line2"></span>		
+			</a>
+		</header>
+	</div>
+
+	<main>
+		<div class="main_full">
+			<!--메인배경(동영상)-->
+			<section class="main_visual">
+				<video autoplay muted playsinline loop poster="media/main_bg_poster.jpg">
+					<source src="media/main_bg.mp4" type="video/mp4">
+					이 브라우저에서는 동영상 기능을 지원하지 않습니다.
+				</video>
+				<div class="main_text_container">
+					<p class="main_text">조용하고 프라이빗한 호텔</p>
+					<div class="main_text_reservation">
+						<a href="#">RESERVATION</a>
+					</div>
+				</div>
+			</section>
+
+			<div class="con_wrap">
+				<section>
+					<div class="con_top">
+						<h2>STAY ALL INCLUSIVE</h2>
+						<p><u>VIEW MORE</u></p>
+					</div>
+					<div class="con_bottom">
+						<div class="stay1">
+							<img src="img/stay1.jpg" alt="">
+							<div class="txt">
+								<div class="title">
+									<h3>어텀 겟어웨이</h3>
+									<p>선선한 가을 바람과 함께 즐기는 낭만적인 여행</p>
+								</div>
+								<div class="date">
+									<p>예약기간<span>22.09.04. - 22.12.22.</span></p>
+									<p>숙박기간<span>22.09.04. - 22.12.22.</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="stay2">
+							<img src="img/stay2.jpg" alt="">
+							<div class="txt">
+								<div class="title">
+									<h3>스위트 딜라이트</h3>
+									<p>일상에서 벗어나 달콤한 하루를 즐겨보세요.</p>
+								</div>
+								<div class="date">
+									<p>예약기간<span>22.09.04. - 22.12.22.</span></p>
+									<p>숙박기간<span>22.09.04. - 22.12.22.</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="stay3">
+							<img src="img/stay3.jpg" alt="">
+							<div class="txt">
+								<div class="title">
+									<h3>어텀 힐링 스파</h3>
+									<p>몸과 마음을 온전하게 휴식할 수 있는 스파 패키지로 힐링하세요.</p>
+								</div>
+								<div class="date">
+									<p>예약기간<span>22.08.21. - 22.11.20.</span></p>
+									<p>숙박기간<span>22.08.21. - 22.11.20.</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+
+
+				<section class="con1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper ex vitae nisi consectetur gravida. Curabitur ultrices vestibulum urna quis mollis. Vestibulum consequat nulla elit, ut sagittis sem facilisis sed. Maecenas id tristique ipsum. Vivamus nisl leo, pharetra et nibh nec, porttitor porta dolor. Aliquam nunc sem, semper quis lacinia sit amet, posuere eget odio. Sed euismod enim in nisl hendrerit, non consequat lectus mollis. Cras dictum lorem viverra, ullamcorper dolor vel, eleifend sem. Cras mattis varius semper. Cras ullamcorper orci lorem, a sollicitudin risus scelerisque eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p><br><br>
+					<img src="https://via.placeholder.com/550x150" alt=""><br><br><br>
+					<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;  Aliquam sagittis nisl sodales consectetur commodo. Proin volutpat tortor augue, osuere cubilia curae; Integer lorem leo, pulvinar vitae ornare eget, pretium a dolor. Nullam porttitor, lorem nec vulputate porttitor, ex urna condimentum urna, a accumsan orci justo eget orci. Nullam id convallis tellus, ut elementum sapien. Morbi quis aliquam odio. Aliquaat convallis velit mollis in. Phasellus venenatis malesuada odio a tincidunt. Nullam eu nisl sit amet nunc tincidunt interdum in in mauris. Pellentesque erat augue, scelerisque a iaculis sit amet, sagittis nec lorem.</p><br><br>
+				</section>
+				<section class="con2">
+					<p>Sed efficitur, arcu vitae lacinia volutpat, erat dui convallis nisi, sit amet ornare nulla urna id ante. Morbi dui nisi, vestibulum nec massa vel, cursus scelerisque risus. Morbi pellentesque augue feugiat euismod lacinia. Suspendisse viverra enim nulla, sed suscipit mauris sollicitudin eu. Etiam commodo venenatis eros, a tempus purus tincidunt eget. Maecenas nec maximus velit, ut pulvinar tellus. Sed vel justo nibh. Donec quis odio at leo auctor imperdiet quis id leo. Maecenas accumsan et felis id fermentum. Donec molestie, lacus vitae viverra hendrerit, ante ipsum convallis lorem, id ultrices eros neque eu elit. Mauris venenatis nunc eget leo pharetra, vel dictum mi hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tincidunt lacus. Proin aliquam arcu odio. Praesent eget dictum ante.</p><br><br>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>sagittis sem</li>
+						<li>Maecenas id tristique</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>consectetur gravida</li>
+					</ul><br><br>
+					<p>Integer lorem leo, pulvinar vitae ornare eget, pretium a dolor. Nullam porttitor, lorem nec vulputate porttitor, ex urna condimentum urna, a accumsan orci justo eget orci. Nullam id convallis tellus, ut elementum sapien. Morbi quis aliquam odio.Nulla a elit finibus, pellentesque purus et, gravida lectus. Donec accumsan augue eu viverra laoreet. Donec at pharetra ipsum. Pellentesque luctus non diam et rhoncus. Quisque fringilla, dui vel tincidunt dapibus, orci dolor tempor neque, ac fringilla mi libero vel neque. Cras vel eleifend ex. Cras eget lectus a mauris ullamcorper porttitor. Proin at leo vel ex cursus vehicula. Aliquam vestibulum et sem vulputate consequat.</p>        
+				</section>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
